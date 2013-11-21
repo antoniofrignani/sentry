@@ -102,7 +102,7 @@ class IlluminateCookie implements CookieInterface {
 	 */
 	public function get()
 	{
-		return $this->jar->get($this->getKey());
+		return \Cookie::get($this->getKey());
 	}
 
 	/**
